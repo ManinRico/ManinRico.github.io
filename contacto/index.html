@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
-<!--Entry Point:index.html -->
-	<head>
+<html lang="es">
+<!--Entry Point:index.html - Project: Web desing for Construcciones Manin, S.L - Author: Jose Maria Rico Leal --> 
 		<title>Contacto | Construcciones Manin</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="../assets/css/main.css">	
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<meta name="description" content="Empresa de construcción en Castalla (Alicante), reformamos cocinas, baños y todo tipo de alicatado en general. Nos adaptamos a tus necesidades, presupuesto sin compromiso.">
-		<meta name="keywords" content="Construcciones, reformas, cocinas, baños, reparaciones, castalla, alicante">
+		<meta name="google-site-verification" content="UOJC-tyB3JUHv0xn1sN9ed5QrlOq6bMThFYGTUULN2Q" />
+		<meta name="description" content="Rellena el formulario y te contatactamos en 24h sin compromiso, te garantizmos precio competitivo y mejor servicio.">
+		<meta name="keywords" content="reforma, reformas, presupuesto, obra, obras, construcción, construcciones, reforma, reformas, azulejo, alicatado, cocinas, baños, castalla, alicante">
 		<meta name="viewport" content="Width=device-width, initial-scale=1">
 		<meta name="og:title" property="og:title" content="Construcciones Manin">
+		<meta property="og:locale" content="es_ES" />
 	</head>
 	
 	<body >
@@ -28,7 +29,8 @@
 						<div class="contact-info" id="contact-info">
 							<p class="phone"><a class="spain"></a>Llámanos : <a href="#">637 40 60 50</a></p>
 						    <p class="phone"><a class="uk"></a>Call us : <a href="#">602 21 96 53</a></p>
-							<p class="gpa">Localízanos : <a href="https://www.google.com/maps/place/Carrer+San+Vicent+del+Raspeig,+16,+03420+Castalla,+Alacant,+Spain/data=!4m2!3m1!1s0xd63d43a45e4e0d9:0x68963afd0fbfeee0?sa=X&ved=2ahUKEwi6gJmw68vxAhWsu3EKHTw2Bc4Q8gEwAHoECAsQAQ">Dirección en mapa</a></p>
+						    <p class="envelope">E-mail : <a href="#">construccionesmanin@gmail.com</a></p>
+							<p class="gpa">Localízanos : <a href="https://www.google.com/maps/place/Construcciones+Manin,+S.L./@38.5967627,-0.666674,17z/data=!3m1!4b1!4m5!3m4!1s0xd63d56a5428ee6f:0xb4a4b99f65f00d8!8m2!3d38.5967627!4d-0.6644853">Dirección en mapa</a></p>
 						</div>
 						<div class="clear"> </div>
 					</div>
@@ -38,6 +40,7 @@
 						<ul>
 							<li><a href="../index.html">Inicio</a></li>
 							<li><a href="../servicios/index.html">Servicios</a></li>
+							<li><a href="../obras/index.html">Obras</a></li>
 							<li class="active"><a>Contacto</a></li>
 							<div class="clear"> </div>
 						</ul>
@@ -46,46 +49,27 @@
 			</div>
 								
 			</header>
-			<section id="format_h2">
-				     <h2>Our Details</h2>
-			        <form id="contact-form" method="get"  action="../index.html">
-			         <p >* Required</p>
+			<section>			     
+			        <form action="https://formsubmit.co/construccionesmanin@gmail.com" id="contact-form" method="POST"  >
+			        <h2>Tus datos</h2>	
+			         <p >* Campos obligatorios</p>
 			         <fieldset>
-			            <legend>Online Contact Form</legend>
-			            <p><label class="field" for="first_name"><span>*</span>First Name: </label><input class="form_input" name="first name" type="text" id="first_name" placeholder="Enter first name" /></p>
-			            <p><label class="field" for="last_name"><span>*</span>Last Name: </label><input class="form_input" name="last name" type="text" id="last_name" placeholder="Enter last name" /></p>
-			            <p><label class="field" for="address_first_line"><span>*</span>Address First Line: </label><input class="form_input" name="address first line" type="text" id="address_first_line" placeholder="First line of your address" /></p>
-			            <p><label class="field" for="address_second_line">&nbsp;&nbsp;AddressSecondLine:  </label><input name="address second line" type="text" id="address_second_line" placeholder="Second line of your address"></p>
-			            <p><label class="field" for="city"><span>*</span>City: </label><input class="form_input" name="city" type="text" id="city" placeholder="Your city"></p>
-			            <p><label class="field" for="country">&nbsp;&nbsp;Country: </label><input type="text" id="country" placeholder="Your country"></p>
-			            <p><label class="field" for="contact_number">&nbsp;&nbsp;Contact Number:  </label><input type="number" id="contact_number" placeholder="eg. +353xxxxxxxxxxx" min="8"></p>
-			            <p><label class="field" for="email"><span>*</span>Email: </label><input class="form_input" name="email" type="email" id="email" placeholder="Enter Email Address" ></p>
-			            <p><label class="field" for="comments">Comments: </label></p>
-			            <textarea name="comments" rows=3 cols=20 id="comments" placeholder="Enter Comments Here" ></textarea>
-			            <input class="submit_button" type="submit" value="Submit" onclick="print_out_error()">
-			            <input class="submit_button" type="reset" value="Reset Form"><br>
-			            <p id="error-list"> You have (<span id="error-count"></span>) errors</p>
+			            <legend>Formulario de contacto online</legend>
+			            <p><label class="field" for="first_name"><span>*</span>Nombre: </label><input class="form_input" name="nombre" type="text" id="first_name" placeholder="Escribe tu nombre..." /></p>
+			            <p><label class="field" for="contact_number">&nbsp;&nbsp;Teléfono:  </label><input type="number" id="contact_number" placeholder="eg. 6xx xx xx xx" min="9"></p>
+			            <p><label class="field" for="email"><span>*</span>Correo: </label><input class="form_input" name="correo" type="email" id="email" placeholder="Escribe tu correo..." ></p>
+			            <p><label class="field" for="comments">Comentarios: </label></p>
+			            <textarea name="comments" rows=3 cols=20 id="comments" placeholder="Escribe tus comentarios..." ></textarea>
+			            <input class="submit_button" type="submit" value="Enviar" onclick="print_out_error()">
+			            <input class="submit_button" type="reset" value="Limpiar formulario"><br>
+			            <p id="error-list"> Numero (<span id="error-count"></span>) errores</p>
 			            <span id="fail-message"></span>			           
 			            
 
 			         </fieldset>
 			       </form>
    			 </section>
-   			 <aside class="booking_contact_info">
-					      <h1>Some Info</h1>
-					      <h2>Location:</h2>
-					      <a href="#"><img src="../assets/images/map.jpg" title ="Check-in Times" class="responsive"/></a>
-					      <ul>
-					        <li>The B&B is located 40 miles/80 kms from Shannon<p>airport and 2 hour drive from Dublin airport.</p></li>
-					      </ul>
-					     
-					     <h2>Taxis & Buses:</h2></a>
-					      <a href="#"><img src="../assets/images/taxi.jpg" title="Accepted Methods of Payment" class="responsive"/></a>
-					      <ul>
-					        <li>Taxis are available on request.</li>
-					        <li>The nearest bus stop is only 50 yards away.</li>
-					      </ul>
-    			</aside>
+   			
 							
 		</div>
 	
@@ -94,9 +78,10 @@
 			<div class="row">
 				<div class="column" id="column_1">
 					
-					<h1>Podemos anadir algo</h1>
-					
-					
+					<h1>Construcciones Manin</h1>
+					<p>Construcciones y reformas en Castalla</p>
+					<p>Carrer San Vicent del Raspeig, N° 16, 03420, Castalla, Alicante, Spain</p>
+					<p>L a V: 8:00 a 13:00 - 15:00 a 18:00</p>					
 				</div>
 				<div class="column" id="column_2">
 					<h1>Construcciones Manin</h1>	
@@ -107,9 +92,9 @@
 				<div class="column" id="column_3">
 						<h1>Síguenos por las Redes Sociales:</h1>
 					<div>
-						<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+						<a href="https://www.facebook.com/pages/category/Home-Improvement/Reformas-y-construcciones-manin-1061805253880809/" class="fa fa-facebook"></a>
 						<a href="https://www.instagram.com/accounts/emailsignup/?hl=en" class="fa fa-instagram"></a>
-						<a href="https://www.linkedin.com/home" class="fa fa-linkedin"></a>
+						<a href="https://www.linkedin.com/in/josemariaricoleal/" class="fa fa-linkedin"></a>
 					</div>	
 					
 				</div>
@@ -117,7 +102,7 @@
 														
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script type="text/javascript" src="../assets/js/main_1.js"></script>
+		<script type="text/javascript" src="../assets/js/main.js"></script>
 		
 		
 
